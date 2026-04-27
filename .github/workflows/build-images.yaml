@@ -30,7 +30,7 @@ jobs:
         id: get_repo_owner
         run: echo ::set-output name=repo_owner::$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')
       - name: Build container base+DASK image
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v7
         with:
           context: ./jupyterlab/
           outputs: "type=registry,push=true"
