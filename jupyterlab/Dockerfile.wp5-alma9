@@ -8,3 +8,4 @@ RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkg
 RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 
 RUN conda update -c conda-forge -y root
+RUN conda clean -a -y
