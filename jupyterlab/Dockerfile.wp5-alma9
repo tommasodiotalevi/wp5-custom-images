@@ -3,4 +3,8 @@ ARG BASE_IMAGE="ghcr.io/icsc-spoke2-repo/jlab:wp5-alma9-highrate-v0.1.4"
 FROM ${BASE_IMAGE}
 
 # Update conda ROOT 
+
+RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
+RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
+
 RUN conda update -c conda-forge -y root
