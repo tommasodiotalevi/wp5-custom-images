@@ -10,4 +10,4 @@ RUN conda install -c conda-forge icu=75.1 nodejs=20.12.2 boost root="6.38.*" -y
 
 COPY refresh-manifest.py /opt/conda/lib/python3.11/site-packages/dask_labextension/refresh-manifest.py
 
-ENV IMAGE_TAG=latest-boost-v2
+ENV IMAGE_TAG=latest-boost-v3
