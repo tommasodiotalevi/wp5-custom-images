@@ -9,4 +9,5 @@ RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkg
 RUN conda install -y boost root
 
 COPY refresh-manifest.py /opt/conda/lib/python3.11/site-packages/dask_labextension/refresh-manifest.py
+COPY certificates/. /cvmfs/grid.cern.ch/etc/grid-security/certificates/
 ENV IMAGE_TAG=latest-boost-v2
