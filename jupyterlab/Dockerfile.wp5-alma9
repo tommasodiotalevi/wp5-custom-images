@@ -9,4 +9,4 @@ RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkg
 RUN conda install -y boost root
 
 COPY refresh-manifest.py /opt/conda/lib/python3.11/site-packages/dask_labextension/refresh-manifest.py
-ENV IMAGE_TAG=latest-boost
+ENV IMAGE_TAG=latest-boost-v2
