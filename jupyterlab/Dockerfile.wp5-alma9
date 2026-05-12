@@ -6,7 +6,7 @@ FROM ${BASE_IMAGE}
 RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/main
 RUN conda tos accept --override-channels --channel https://repo.anaconda.com/pkgs/r
 
-RUN conda install -c conda-forge icu=75.1 nodejs=20.12.2 boost root="6.28.*" -y
+RUN conda install -c conda-forge icu=75.1 nodejs=20.12.2 boost root="6.38.*" -y
 
 COPY refresh-manifest.py /opt/conda/lib/python3.11/site-packages/dask_labextension/refresh-manifest.py
 
